@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/applyComp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Company Name"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="29th july.."
+            android:textAppearance="?android:textAppearanceSmall"
+            android:padding="10dp"
+            android:id="@+id/applyDate"
+            android:textColor="#4E5DAF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:padding="10dp"
+            android:id="@+id/applyEmail"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advert Name"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:padding="5dp"
+            android:id="@+id/applyAdvert"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Qualification"
+            android:padding="10dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:id="@+id/applyQual"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:padding="10dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:id="@+id/applyExperience"
+            />
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="162dp"
+            android:layout_height="53dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:text="Reject"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_reject"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_reject"
+            android:layout_width="162dp"
+            android:layout_height="53dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginBottom="341dp"
+            android:background="@drawable/button"
+            android:text="Accept"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_accept"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

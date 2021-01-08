@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".JobDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000000"
+        android:text="Job Title"
+        android:padding="5dp"
+        android:id="@+id/job_details_title"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="2 August, 2020"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/blue"
+        android:id="@+id/job_details_date"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Company Name"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000"
+        android:id="@+id/job_details_company"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Description"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/blue"
+        android:id="@+id/job_details_description"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000"
+        android:text="Skills"
+        android:id="@+id/job_details_skills"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="@color/blue"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Salary"
+        android:id="@+id/job_details_salary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:text="Location"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/job_details_location"/>
+
+</LinearLayout>

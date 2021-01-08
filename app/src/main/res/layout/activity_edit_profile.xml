@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".EditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#050505"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+
+                android:inputType="text"
+                android:textColorHighlight="#fff"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="1dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+
+                    android:textSize="20dp" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth"
+                android:textColor="#050505"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="-80dp">
+
+                <TextView
+                    android:id="@+id/et_dob"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+
+                    android:hint="DD/MM/YY"
+                    android:inputType="date"
+                    android:textColorHighlight="#fff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textColor="#050505"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_city"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="City"
+
+                android:inputType="text"
+                android:textColorHighlight="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#050505"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="top|left"
+                android:hint="Address"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="5"
+                android:minLines="3"
+                android:scrollbars="vertical"
+
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UG Course"
+                    android:textColor="#050505"
+
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/sp_ug"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="12dp"
+                android:orientation="horizontal"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PG Course"
+                    android:textColor="#050505"
+
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/sp_pg"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </Spinner>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skills"
+                android:textColor="#050505"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="top|left"
+                android:hint="Skills"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="5"
+                android:minLines="3"
+                android:scrollbars="vertical"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Achievements"
+                android:textColor="#050505"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_achievement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="top|left"
+                android:hint="Achievements"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="5"
+                android:minLines="3"
+                android:scrollbars="vertical"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Certifications"
+                android:textColor="#050505"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_certification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="top|left"
+                android:hint="Certifications"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="5"
+                android:minLines="3"
+                android:scrollbars="vertical"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work Experience"
+                android:textColor="#050505"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:id="@+id/workexp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_saveprofile"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:text="Save"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="*Only PDF File Size Upto 10MB"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No file selected"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:gravity="center_horizontal" />
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="upload Cv"
+                android:textColor="#fff"
+                android:background="@drawable/button"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
